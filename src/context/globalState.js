@@ -2,8 +2,10 @@ import React, { createContext, useReducer, useEffect } from 'react';
 import AppReducer from './AppReducer';
 
 const intitalState = {
-    incomeTransactions: JSON.parse(localStorage.getItem('incomeTransactions')) || [],
+     incomeTransactions: JSON.parse(localStorage.getItem('incomeTransactions')) || [],
     expenseTransactions:JSON.parse(localStorage.getItem('expenseTransactions')) || []
+    // incomeTransactions: [],
+    // expenseTransactions:[]
 }
 
 export const GlobalContext = createContext(intitalState); 
